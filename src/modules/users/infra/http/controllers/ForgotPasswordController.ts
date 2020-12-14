@@ -18,8 +18,6 @@ export default class ForgotPasswordController {
             email,
         });
 
-        delete user.password;
-
         return response.status(204).json();
     }
 }
